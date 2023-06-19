@@ -1,5 +1,5 @@
 #!/bin/bash
-git commit -a
+git add -A && git commit -m "$1"
 git push
 sudo netlify build
 sudo netlify deploy

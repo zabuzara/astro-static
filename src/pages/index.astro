@@ -1,4 +1,6 @@
 ---
+const pageTitle = "Nextodon";
+const buttons = ['Authenticate', 'Generate'];
 ---
 
 <html lang="en">
@@ -10,6 +12,13 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Nextodon v.1</h1>
+		<h1>{pageTitle}</h1>
+		<div>
+			{
+				buttons.map((btn) => 
+					<button>{btn}</button>
+				)
+			}
+		</div>
 	</body>
 </html>
